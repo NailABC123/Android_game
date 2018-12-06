@@ -19,23 +19,22 @@
         <RadioButton
                 android:drawableTop="@mipmap/ic_hand_paper"
                 android:text="Scissors"
-                android:visibility="visible"
+                android:visibility="invisible"
                 android:layout_width="114dp"
                 android:layout_height="144dp" android:id="@+id/robot_paper_RadioButton"/>
         <RadioButton
                 android:drawableTop="@mipmap/ic_hand_scissors"
                 android:id="@+id/robot_scissors_RadioButton"
-                android:visibility="visible"
+                android:visibility="invisible"
                 android:text="Paper" android:layout_width="114dp"
                 android:layout_height="144dp" android:layout_weight="1"/>
         <RadioButton
                 android:text="Stone "
-                android:visibility="visible"
+                android:visibility="invisible"
                 android:textColor="#000000"
                 android:drawableTop="@mipmap/ic_hand_stone" android:id="@+id/robot_stone_RadioButton"
                 android:layout_width="114dp"
                 android:layout_height="144dp"
-
                 android:layout_weight="1"/>
     </RadioGroup>
     <RadioGroup
@@ -267,7 +266,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="68dp"
             app:layout_constraintBottom_toBottomOf="@+id/robot_scissors_label_textView"
-            app:layout_constraintTop_toBottomOf="@+id/robot_selections_radioGroup"/>
+            app:layout_constraintTop_toBottomOf="@+id/robot_selections_radioGroup" android:visibility="invisible"/>
     <TextView
             android:text="Stone"
             android:layout_width="wrap_content"
@@ -276,7 +275,7 @@
             android:id="@+id/robot_stone_label_textView" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="44dp"
             app:layout_constraintBottom_toBottomOf="@+id/robot_scissors_label_textView"
-            app:layout_constraintTop_toBottomOf="@+id/robot_selections_radioGroup"/>
+            app:layout_constraintTop_toBottomOf="@+id/robot_selections_radioGroup" android:visibility="invisible"/>
     <TextView
             android:text="Scissors"
             android:layout_width="wrap_content"
@@ -285,7 +284,8 @@
             android:id="@+id/robot_scissors_label_textView"
             app:layout_constraintTop_toBottomOf="@+id/robot_selections_radioGroup"
             app:layout_constraintEnd_toStartOf="@+id/robot_stone_label_textView" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toEndOf="@+id/robot_paper_label_textView" android:layout_marginStart="8dp"/>
+            app:layout_constraintStart_toEndOf="@+id/robot_paper_label_textView" android:layout_marginStart="8dp"
+            android:visibility="invisible"/>
     <TextView
             android:text="Stone"
             android:textColor="#000000"
