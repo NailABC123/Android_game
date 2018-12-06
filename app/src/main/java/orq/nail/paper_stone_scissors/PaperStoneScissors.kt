@@ -212,11 +212,10 @@ class PaperStoneScissors : AppCompatActivity() {
                 var best_new_player_result_points = player_points_textView.text.toString().toInt()
                 save_data_one_item_int("best_new_player_result_points", best_new_player_result_points)
 
-                val best_new_player_vs_robot_result_points = robot_points_textView.text.toString().toInt()
-                editor_best_points_result.putInt(
-                    "best_new_player_vs_robot_result_points",
-                    best_new_player_vs_robot_result_points
-                )
+                var best_new_player_vs_robot_result_points = robot_points_textView.text.toString().toInt()
+                save_data_one_item_int("best_new_player_vs_robot_result_points",
+                    best_new_player_vs_robot_result_points)
+
 
             }//end of if
         //else
